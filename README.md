@@ -6,7 +6,6 @@ Code behind the Secondary Structure Data Exploration
 * [Requirements](#requirements)
 * [Usage](#usage)
 * [Overview of file formats used](#Overview-of-file-formats)
-* [Application notes](#Application-notes)
 * [Contact](#contact)
 * [License](#license)
 
@@ -25,7 +24,7 @@ To install your packages using requirements.txt, execute the following:
 ```
 main.sh
 python3 convert.py
-python3 ifv.py
+python3 tsne_dbscan.py
 ```
 Keep in mind that in the current version all paths to the files in the files must be changed. 
 
@@ -43,22 +42,21 @@ CCCTAAAC...
 
 
 ### .bed 6-column 
-chrom   start       stop                 strand
-Chr1	6879	6888	AT1G01020.1	13.7434	-
+chrom start stop  name        score   strand
+Chr1  6879	6888	AT1G01020.1	13.7434	-
 
 
-
-## Application notes
-...
 
 ## Contact
 
 For questions or problems, please feel free to write an email and I will get back to you as soon as possible.
 
 [msohn@techfak.uni-bielefeld.de](mailto:msohn@techfak.uni-bielefeld.de)
-.
+
 
 ## License
 
-* The ... package is licensed under the [MIT license](...).
+* The sklearn package is licensed under the [BSD 3 license](https://github.com/scikit-learn/scikit-learn/blob/main/COPYING).
+* The numpy package is licensed under the [BSD 3 license](https://github.com/numpy/numpy/blob/main/LICENSE.txt).
+* The matplotlib package is licensed under the [PSF license](https://github.com/matplotlib/matplotlib/blob/master/LICENSE/LICENSE).
 
