@@ -29,3 +29,6 @@ bedtools getfasta -fi $TAIR -bed $SLOP > $GETFASTA
 
 # faltet die .fasta Dateien mit angegebener -T Temperatur
 RNAfold -T 20 < $GETFASTA > $RNAFOLD
+
+# löscht automatisch generierte .ps Dateien
+rm *.ps
