@@ -49,22 +49,7 @@ Chr1	6879	6888	AT1G01020.1	13.7434	-
 
 
 ## Application notes
-To use your own color schemes for the visualisation of the regions or the heatmap, you can adjust the regions.txt or the heatmaps.txt.
-
-The color schemes for the heatmap are selectable in the drop-down menu of the user interface. 
-
-```
-### heatmaps.txt
-blue white red = #0066FF #FFFFFF #FF0000
-identifier = white yellow green blue red black
-
-### regions.txt
-intron = #FFFFFF
-3' = green
-5' = red
-cds = #0066FF
-```
-
+...
 
 ## Contact
 
