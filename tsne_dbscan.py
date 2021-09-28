@@ -226,7 +226,7 @@ for k, col in zip(unique_labels, colors):
 
     class_member_mask = (labels == k)
 
-    xy = principalComponents[class_member_mask & core_samples_mask]
+    xy = tsne_result[class_member_mask & core_samples_mask]
     plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col), markeredgewidth=0.0)
     
     list1 = xy[:, 0]
@@ -236,7 +236,7 @@ for k, col in zip(unique_labels, colors):
     
     plt.annotate(k, np.mean(a, axis=1), horizontalalignment='center', verticalalignment='center', size=20, weight='bold') 
     
-    xy = principalComponents[class_member_mask & ~core_samples_mask]
+    xy = tsne_result[class_member_mask & ~core_samples_mask]
     plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col), markeredgewidth=0.0)
     
 
