@@ -8,9 +8,9 @@ from sklearn.cluster import DBSCAN
 
 
 # INPUT:: Path to RNAfold file
-input = 'Dataset_A.txt'
-output_png = 'Dataset_A.png'
-output_txt = 'Dataset_A_count.txt'
+input = 'structures/Dataset_B.txt'
+output_png = 'output/Dataset_B.png'
+output_txt = 'output/Dataset_B_count.txt'
 
 # Angabe der k-mer size, potentiell scalable, wenn gewollt
 ksize = 3
