@@ -42,7 +42,7 @@ CCCTAAAC...
 
 
 ### .bed 6-column 
-chrom start stop  name        score   strand
+chrom start     stop    name        score   strand
 Chr1  6879	6888	AT1G01020.1	13.7434	-
 
 ```
