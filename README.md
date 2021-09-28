@@ -5,7 +5,7 @@ Code behind the Secondary Structure Data Exploration
 
 * [Requirements](#requirements)
 * [Usage](#usage)
-* [Overview of file formats used](#Overview-of-file-formats)
+* [Overview of file formats](#Overview-of-file-formats)
 * [Contact](#contact)
 * [License](#license)
 
@@ -26,7 +26,7 @@ main.sh
 python3 convert.py
 python3 tsne_dbscan.py
 ```
-Keep in mind that in the current version all paths to the files in the files must be changed. 
+Keep in mind that in the current version all paths to the files in the files must be changed.
 
 ## Overview of file formats
 Only the following file formats are accepted and processed by SSDE:
@@ -42,8 +42,8 @@ CCCTAAAC...
 
 
 ### .bed 6-column 
-chrom start     stop    name        score   strand
-Chr1  6879	6888	AT1G01020.1	13.7434	-
+chrom   start   stop    name            score    strand
+Chr1    6879	6888	AT1G01020.1	13.7434	 -
 
 ```
 
