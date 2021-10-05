@@ -19,6 +19,11 @@ To install your packages using requirements.txt, execute the following:
 3. ``` pip3 install -r requirements.txt```
 4. You are done installing dependencies
 
+Additional shell tools:
+- bedtools  2.27.1
+- samtools  1.11
+- RNAfold   2.1.5
+
 ## Usage:
 
 ```
