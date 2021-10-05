@@ -25,10 +25,7 @@ cut -f 1,2 $TAIRFAI > $SIZES
 bedtools slop -i $DATASET -g $SIZES -b 40 > $SLOP
 
 # extrahiert die .fasta Dateien
-bedtools getfasta -fi $TAIR -bed $SLOP > $GETFASTA
+bedtools getfasta -fi $TAIR -bed $SLOP -s > $GETFASTA
 
 # faltet die .fasta Dateien mit angegebener -T Temperatur
-RNAfold -T 20 < $GETFASTA > $RNAFOLD
-
-# löscht automatisch generierte .ps Dateien
-rm *.ps
+RNAfold -T 20 --noPS < $GETFASTA > $RNAFOLD
