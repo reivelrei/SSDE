@@ -23,7 +23,7 @@ with open(input, 'r') as f:
 for structures in dotlist:
     bg = cgb.BulgeGraph.from_dotbracket(structures)
     elementstring = bg.to_element_string()
-    important = elementstring[43:48]
+    important = elementstring[40:49]
     structurelist.append(important)
 
 # Schreibt den Output
